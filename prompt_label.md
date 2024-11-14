@@ -1,31 +1,17 @@
-This is the guideline on how to label questions as either Global or Local based on a knowledge graph database. To maximize labelling accuracy, pay close attention to the following aspects of the question: 
+This is the guideline on how to label questions as either Global or Local based on a knowledge graph database. When categorizing the user's questions as Global or Local, carefully analyze the following aspects:
 
-Scope: 
-Global: The question requires an analysis or understanding of the entire knowledge graph or a large portion of it. It typically involves aggregations, patterns, or themes that span multiple entities and relationships. 
-Example: "What are the top five themes in this dataset?" 
-Local: The question centers on specific entities or a small, well-defined subset of the knowledge graph, focusing on detailed information about those entities. 
-Example: "What are the healing properties of chamomile?" 
+Scope and Complexity:
+Global questions require a broad understanding of the entire knowledge graph or a significant portion of it. They often involve complex analyses, aggregations, or identifying overarching patterns and themes that span multiple entities and relationships. Example: "What are the most common research topics in this dataset, and how have they evolved over time?"
+Local questions focus on specific entities or a small, well-defined subset of the knowledge graph. They seek detailed information about particular entities and can usually be answered by querying a limited number of nodes and edges. Example: "What is the chemical composition of chamomile, and how does it contribute to its healing properties?"
 
-Complexity: 
-Global: The question is broad and may require complex queries or analyses that aggregate data across numerous nodes and edges in the graph. 
-Local: The question is usually specific and can be answered by querying a limited number of nodes and edges. 
+Data Requirements and Context Dependence:
+Global questions require data distributed across various parts of the knowledge graph. Answering them depends on a comprehensive view and often involves synthesizing information from diverse areas. The context is derived broadly from the interconnected nature of multiple entities and relationships throughout the knowledge graph.
+Local questions require data from a specific part or small section of the knowledge graph. The answer typically involves focused information directly related to particular entities or a small group of related entities. The context is narrowly defined and closely associated with the entities in question.
 
-Data Requirements: 
-Global: Requires data that is distributed across various parts of the knowledge graph. The answer depends on a comprehensive view and often involves synthesizing information from diverse areas. 
-Local: Requires data from a specific part or small section of the knowledge graph. The answer typically involves focused information related to particular entities. 
+Nature of Relationships and Semantic Meaning:
+Global questions often involve multiple types of relationships and their interconnections across the knowledge graph to derive insights. They may require an understanding of overall patterns, trends, or semantic meanings that emerge from the collective information. Example: "How do the collaboration patterns among researchers in this dataset influence the impact of their publications?"
+Local questions mostly involve direct relationships related to specific entities. They focus on the semantic meaning and properties of individual entities or their immediate connections. Example: "What is the publication history of Dr. Smith, and which journals has she published in?"
 
-Context Dependence: 
-Global: Context is derived broadly from the interconnected nature of multiple entities and relationships throughout the knowledge graph. 
-Local: Context is narrowly defined and directly associated with particular entities or a small group of related entities. 
+When determining the category, consider the breadth of information required, the complexity of the analysis, the context dependence, and the nature of the relationships involved. Global questions necessitate a broader perspective and understanding of the knowledge graph as a whole, while Local questions are more focused on specific entities and their direct relationships.
 
-Nature of Relationships: 
-Global: Often involves multiple types of relationships and their interconnections across the knowledge graph to derive insight. 
-Local: Mostly involves direct relationships related to specific entities. 
-
-Examples and Semantic Meaning: 
-Global: Questions that require an understanding of overall patterns or insights: 
-Example: "What are the patterns of collaboration among researchers in this dataset?" 
-Local: Questions that focus on specific entities or direct relationships within the knowledge graph: 
-Example: "Which papers did Dr. Smith co-author?" 
-
-By considering these aspects, ensure that your categorization is accurate and contextually appropriate. 
+By carefully evaluating these aspects, you can accurately categorize the user's question as either Global or Local.
